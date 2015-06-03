@@ -7,5 +7,7 @@ public class Server {
     public static void main(String[] args)
     {
         System.out.println("Hello world!");
+        Thread listener = new Thread(new NetListener());
+        listener.start();
     }
 }
